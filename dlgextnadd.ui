@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DlgExtnAdd</class>
+ <widget class="QDialog" name="DlgExtnAdd">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>736</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>431</width>
+     <height>462</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="lblExtnNo">
+      <property name="text">
+       <string>Extension No:</string>
+      </property>
+      <property name="buddy">
+       <cstring>leExtnNo</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="leExtnNo"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lblDisplayName">
+      <property name="text">
+       <string>Display Name:</string>
+      </property>
+      <property name="buddy">
+       <cstring>leDisplayName</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="leDisplayName"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lblAuthID">
+      <property name="text">
+       <string>AuthID:</string>
+      </property>
+      <property name="buddy">
+       <cstring>leAuthID</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="leAuthID"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="lblPwd">
+      <property name="text">
+       <string>Password:</string>
+      </property>
+      <property name="buddy">
+       <cstring>lePwd</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lePwd"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="lblCodec">
+      <property name="text">
+       <string>Codec:</string>
+      </property>
+      <property name="buddy">
+       <cstring>leCodec</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="leCodec"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="lblAdminMode">
+      <property name="text">
+       <string>Admin Mode:</string>
+      </property>
+      <property name="buddy">
+       <cstring>comboAdminMode</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="lblExtnType">
+      <property name="text">
+       <string>Extn Type:</string>
+      </property>
+      <property name="buddy">
+       <cstring>leExtnType</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="leExtnType"/>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Call Forward</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QRadioButton" name="rbNode">
+      <property name="text">
+       <string>None</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QRadioButton" name="rbBusy">
+      <property name="text">
+       <string>On Busy</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1">
+     <widget class="QRadioButton" name="rbNoAns">
+      <property name="text">
+       <string>On No Answer</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="1">
+     <widget class="QRadioButton" name="rbAlways">
+      <property name="text">
+       <string>Always</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="leRecMode"/>
+    </item>
+    <item row="14" column="1">
+     <widget class="QLineEdit" name="leCFExtn"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="lblRecMode">
+      <property name="text">
+       <string>Recording Mode:</string>
+      </property>
+      <property name="buddy">
+       <cstring>leRecMode</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="comboAdminMode"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pbCreate">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>120</y>
+     <width>84</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Create</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbCancel">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>160</y>
+     <width>84</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pbCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>DlgExtnAdd</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>627</x>
+     <y>181</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>679</x>
+     <y>235</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
